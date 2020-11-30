@@ -27,7 +27,8 @@
         android:layout_below="@+id/applogo"
         android:text="@string/tap_here"
         android:textColor="@android:color/black"
-        android:textSize="30sp"/>
+        android:textSize="30sp"
+        android:onClick="goto_welcome"/>
 
 
 </RelativeLayout>

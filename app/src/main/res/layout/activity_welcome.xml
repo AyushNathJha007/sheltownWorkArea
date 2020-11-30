@@ -34,6 +34,7 @@
         android:text="@string/get_started"
         android:textColor="@android:color/black"
         android:textStyle="bold"
+        android:onClick="goto_signup"
         app:backgroundTint="@color/shelt_color" />
 
 

@@ -38,6 +38,7 @@
         android:paddingEnd="30dp"
         android:paddingLeft="30dp"
         android:textColor="@android:color/black"
+        android:focusableInTouchMode="true"
         android:textColorHint="@android:color/black"/>
     <EditText
         android:id="@+id/password_login"
@@ -57,6 +58,7 @@
         android:paddingEnd="30dp"
         android:paddingLeft="30dp"
         android:textColor="@android:color/black"
+        android:focusableInTouchMode="true"
         android:textColorHint="@android:color/black"/>
     <Button
         android:id="@+id/login_btn"
