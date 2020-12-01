@@ -8,4 +8,5 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="shelt_color">#3DCDAB</color>
+    <color name="linekin">   #0077b5    </color>
 </resources>

@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".welcome"
+    tools:context=".login"
     android:background="@mipmap/ic_launcher_bg">
 
     <ImageView
         android:id="@+id/loginlogo"
-        android:layout_width="175dp"
-        android:layout_height="175dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="110dp"
         android:layout_marginStart="10dp"
@@ -60,6 +60,20 @@
         android:textColor="@android:color/black"
         android:focusableInTouchMode="true"
         android:textColorHint="@android:color/black"/>
+    <EditText
+
+       android:id="@+id/forgot_password"
+
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/password_login"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="15dp"
+        android:textColor="#0077b5"
+        android:onClick="goto_verify"
+        android:text="Forgot password?"
+        />
     <Button
         android:id="@+id/login_btn"
         android:layout_width="190dp"
@@ -68,7 +82,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="10dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="10dp"
         android:layout_marginRight="10dp"
         android:background="@drawable/button"
@@ -77,6 +91,16 @@
         android:textColor="@android:color/black"
         android:textStyle="bold"
         app:backgroundTint="@color/shelt_color"/>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_below="@+id/login_btn" >
+
+
+
 
     <TextView
         android:id="@+id/signin_text"
@@ -92,7 +116,16 @@
         android:layout_centerHorizontal="true"
         android:textColor="@android:color/black"
         android:textStyle="bold"
-        android:text="@string/signup_text"/>
+        android:text="Not having an Account?"/>
 
+        <TextView
+            android:id="@+id/signup_text"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/signup"
+            android:textColor="#0077b5"
+            android:onClick="goto_signUp"
+            />
 
+</LinearLayout>
 </RelativeLayout>

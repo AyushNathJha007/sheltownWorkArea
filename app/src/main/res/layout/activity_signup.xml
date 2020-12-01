@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".welcome"
+    tools:context=".signup"
     android:background="@mipmap/ic_launcher_bg">
 
    <ScrollView
@@ -15,8 +15,8 @@
            android:layout_height="wrap_content">
            <ImageView
                android:id="@+id/signuplogo"
-               android:layout_width="175dp"
-               android:layout_height="175dp"
+               android:layout_width="150dp"
+               android:layout_height="150dp"
                android:layout_centerHorizontal="true"
                android:layout_marginTop="110dp"
                android:layout_marginStart="10dp"
@@ -113,7 +113,7 @@
            </LinearLayout>
            <EditText
                android:id="@+id/password_signup"
-               android:inputType="text"
+               android:inputType="textPassword"
                android:layout_width="410dp"
                android:layout_height="60dp"
                android:layout_centerHorizontal="true"
@@ -134,8 +134,6 @@
                android:textColorHint="@android:color/black"/>
 
 
-
-
            <Button
                android:id="@+id/signup_btn"
                android:layout_width="190dp"
@@ -144,7 +142,7 @@
                android:layout_centerHorizontal="true"
                android:layout_marginStart="10dp"
                android:layout_marginLeft="10dp"
-               android:layout_marginTop="30dp"
+               android:layout_marginTop="20dp"
                android:layout_marginEnd="10dp"
                android:layout_marginBottom="10dp"
                android:layout_marginRight="10dp"
@@ -154,22 +152,44 @@
                android:textColor="@android:color/black"
                android:textStyle="bold"
                app:backgroundTint="@color/shelt_color"/>
-
-           <TextView
-               android:id="@+id/signup_text"
-               android:layout_width="wrap_content"
+           <LinearLayout
                android:layout_height="wrap_content"
-               android:layout_below="@+id/signup_btn"
-               android:layout_marginStart="10dp"
-               android:layout_marginLeft="10dp"
-               android:layout_marginTop="30dp"
-               android:layout_marginEnd="10dp"
-               android:layout_marginBottom="30dp"
-               android:layout_marginRight="10dp"
-               android:layout_centerHorizontal="true"
-               android:textColor="@android:color/black"
-               android:textStyle="bold"
-               android:text="@string/already_having_an_account_sign_in"/>
+               android:layout_width="match_parent"
+               android:gravity="center"
+               android:orientation="horizontal"
+               android:layout_below="@+id/signup_btn">
+
+               <TextView
+                   android:id="@+id/signup_text"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@+id/signup_btn"
+                   android:layout_centerHorizontal="true"
+                   android:layout_marginStart="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginEnd="10dp"
+                   android:layout_marginRight="1dp"
+                   android:layout_marginBottom="30dp"
+                   android:text="Already having an Account? "
+                   android:textColor="@android:color/black"
+                   android:textStyle="bold" />
+
+               <TextView
+                   android:id="@+id/login_text"
+                  android:layout_height="wrap_content"
+                  android:layout_width="wrap_content"
+                  android:text="@string/login_txt"
+                  android:textColor="#0077b5"
+                   android:onClick="goto_login"
+                   android:textStyle="bold"
+
+                  />
+
+
+
+           </LinearLayout>
+
 
        </RelativeLayout>
 
