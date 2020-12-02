@@ -12,6 +12,9 @@
         <activity android:name=".signup"></activity>
         <activity android:name=".login" />
         <activity android:name=".welcome" />
+        <activity android:name=".EnterPhoneToVerify"></activity>
+        <activity android:name=".VerifyCode"></activity>
+        <activity android:name=".ResetPassword"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

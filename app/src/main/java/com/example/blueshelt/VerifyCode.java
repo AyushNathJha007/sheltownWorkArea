@@ -15,4 +15,8 @@ public class VerifyCode extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_verify_code);
     }
+
+    public void goTo_Verify(View view) {
+        startActivity(new Intent(getApplication(),ResetPassword.class));
+    }
 }

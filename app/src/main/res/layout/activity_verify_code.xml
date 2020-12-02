@@ -76,6 +76,7 @@
                 android:textAlignment="center"
                 android:background="#037DDC"
                 android:gravity="center_horizontal"
+                android:onClick="goTo_Verify"
                 />
         </androidx.cardview.widget.CardView>
 
