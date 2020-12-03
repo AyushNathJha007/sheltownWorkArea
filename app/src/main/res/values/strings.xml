@@ -15,4 +15,6 @@
     <string name="signup_text">Not having an Account ? <span style="color:blue">Sign Up</span> </string>
     <string name="login_txt">Log In</string>
     <string name="signup">Sign Up</string>
+    <string name="forgot">Forgot Password?</string>
+
 </resources>

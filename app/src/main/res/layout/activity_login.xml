@@ -60,10 +60,9 @@
         android:textColor="@android:color/black"
         android:focusableInTouchMode="true"
         android:textColorHint="@android:color/black"/>
-    <EditText
+    <TextView
 
        android:id="@+id/forgot_password"
-
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:layout_below="@+id/password_login"
@@ -72,7 +71,7 @@
         android:textSize="15dp"
         android:textColor="#0077b5"
         android:onClick="goto_verify"
-        android:text="Forgot password?"
+        android:text="@string/forgot"
         />
     <Button
         android:id="@+id/login_btn"
