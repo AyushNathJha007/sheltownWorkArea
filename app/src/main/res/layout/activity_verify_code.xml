@@ -7,80 +7,112 @@
     android:layout_height="match_parent"
     tools:context=".VerifyCode"
     android:orientation="vertical"
+    android:background="@mipmap/ic_launcher_bg"
     >
 
-    <TextView
-        android:layout_marginTop="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="VERIFY CODE"
-        android:textAlignment="center"
-        android:gravity="center_horizontal"
-        android:textSize="35sp"
-        android:textStyle="bold"/>
-
-
-    <TextView
-        android:layout_marginTop="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Verification code is sent to"
-        android:textAlignment="center"
-        android:gravity="center_horizontal"
-        android:textSize="20sp"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text=" your Mobile Number "
-        android:textAlignment="center"
-        android:gravity="center_horizontal"
-        android:textSize="20sp"/>
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_margin="20dp"
-        >
-        <com.chaos.view.PinView
+        android:layout_height="match_parent"
+        tools:context=".forgotPassword.VerifyCode"
+        android:orientation="vertical">
+
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            app:itemCount="6"
-            app:itemWidth="50dp"
+            android:layout_marginTop="150dp"
+            android:fontFamily="@font/archivo_black"
+            android:gravity="center_horizontal"
+            android:text="VERIFY CODE"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Verification code is sent to"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" your Mobile Number "
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:textSize="20sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
-            style="@style/PinWidget.PinView"
+            android:layout_margin="10dp">
 
-            />
+            <com.chaos.view.PinView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:itemCount="6"
+                app:itemWidth="50dp"
+                android:layout_gravity="center"
+                style="@style/PinWidget.PinView"
+                app:itemRadius="8dp"
+                android:inputType="number" />
 
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_margin="20dp"
-        >
+        </LinearLayout>
 
-        <androidx.cardview.widget.CardView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:cardCornerRadius="10dp"
-            >
-
-            <Button
-                android:id="@+id/verify_otp"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="VERIFY"
-                android:textSize="20sp"
-                android:textAlignment="center"
-                android:background="#037DDC"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
                 android:gravity="center_horizontal"
-                android:onClick="goTo_Verify"
-                />
-        </androidx.cardview.widget.CardView>
+                android:text="Didn't receive a code?"
+                android:textSize="20sp"
+                android:textStyle="normal" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:gravity="center_horizontal"
+                android:text=" Request Again"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+        </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="20dp">
 
-</LinearLayout>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp">
+
+                <Button
+                    android:id="@+id/verify_otp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/button"
+                    android:gravity="center_horizontal"
+                    android:text="Verify OTP"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:onClick="goTo_Verify"
+                    app:backgroundTint="@color/shelt_color"
+                    />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
 
 </LinearLayout>

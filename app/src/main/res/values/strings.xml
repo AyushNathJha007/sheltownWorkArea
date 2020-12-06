@@ -17,4 +17,35 @@
     <string name="signup">Sign Up</string>
     <string name="forgot">Forgot Password?</string>
 
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="Residence_Type">
+        <item>Residence Type</item>
+        <item></item>
+        <item></item>
+        <item>Own</item>
+        <item>Rent</item>
+        <item>Company Provided</item>
+        <item>PG Hostel</item>
+    </string-array>
+
+    <string-array name="Current_profession">
+        <item>Current Profession</item>
+        <item></item>
+        <item></item>
+        <item>Salary</item>
+        <item>Self Employed Profession</item>
+        <item>Self Employed Business</item>
+    </string-array>
+
+    <string-array name="Salary_recieved_in">
+        <item>Salary Recieved In</item>
+        <item></item>
+        <item></item>
+        <item>Cash</item>
+        <item>Cheque</item>
+        <item>Bank</item>
+    </string-array>
+
+
 </resources>
